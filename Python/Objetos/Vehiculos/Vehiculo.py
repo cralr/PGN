@@ -34,13 +34,19 @@ class Vehiculo:
     
 class Coche(Vehiculo):
     
+    def __init__(self):
+        super().__init__()
+    
     def quemarRueda(self):
         print("brrrr")  
 
 class Bicicleta(Vehiculo):
     
+    def __init__(self):
+        super().__init__()
+    
     def hacerCaballito(self):
-        print("Mira como levanto la bicicleta")
+        print("Mira como levanto la bicicleta.")
 
 
 def mostrarMenu():
