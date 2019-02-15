@@ -1,7 +1,7 @@
 '''
 Created on 17 ene. 2019
 
- * Contruir un objeto Fraccion pas�ndole al constructor el numerador y el denominador. 
+ * Contruir un objeto Fraccion pasándole al constructor el numerador y el denominador. 
  * Obtener la fracciónn. 
  * Obtener y modificar numerador y denominador. No se puede dividir por cero. 
  * Obtener resultado de la fracción(número real). 
@@ -16,7 +16,7 @@ class Fraccion:
     
     def __init__(self,numerador,denominador):
         self.__numerador=numerador
-        self.__denominador=denominador
+        self.setDenominador(denominador)
     
     def getNumerador(self):
         return self.__numerador
@@ -42,26 +42,24 @@ class Fraccion:
         resultado= print(self.__numerador,"/",self.__denominador)
         return resultado
     
-    def multiplicarFracciones(self,numerador,denominador):
-        self.__numerador*=numerador
-        self.__denominador*=denominador
-        resultado = print(self.__numerador,"/",self.__denominador) 
+    def multiplicarFracciones(self,fraccion1,fraccion2):
+        n=fraccion1.getNumerador()*fraccion2.getNumerador()
+        d=fraccion1.getDenominador()*fraccion2.getDenominador()
+        resultado = print(n,"/",d) 
         return resultado
     
-    def sumarFracciones(self,numerador,denominador):
-        auxNum= self.__numerador*denominador;
-        auxDen=self.__denominador*numerador;
-        denominadorFinal= self.__denominador*denominador;
-        sumaNumeradores = auxNum + auxDen;
-        resultado = print(sumaNumeradores,"/",denominadorFinal) 
+    def sumarFracciones(self,fraccion1,fraccion2):
+        auxNum=fraccion1.getNumerador()*fraccion2.getDenominador()
+        auxDen=fraccion2.getNumerador()*fraccion1.getDenominador()
+        auxDivisor = fraccion1.getDenominador() * fraccion2.getDenominador();
+        resultado = print(auxNum+auxDen,"/",auxDivisor) 
         return resultado
     
-    def restarFracciones(self,numerador,denominador):
-        auxNum= self.__numerador*denominador;
-        auxDen=self.__denominador*numerador;
-        denominadorFinal= self.__denominador*denominador;
-        restaNumeradores = auxNum - auxDen;
-        resultado = print(restaNumeradores,"/",denominadorFinal) 
+    def restarFracciones(self,fraccion1,fraccion2):
+        auxNum= fraccion1.getNumerador()*fraccion2.getDenominador()
+        auxDen=fraccion2.getNumerador()*fraccion1.getDenominador()
+        auxDivisor = fraccion1.getDenominador() * fraccion2.getDenominador();
+        resultado = print(auxNum-auxDen,"/",auxDivisor) 
         return resultado
     
     def hallarMcd(self):
@@ -83,14 +81,14 @@ class Fraccion:
         return f"{self.__numerador}/{self.__denominador}"
     
 if __name__=="__main__":    
-    fraccion1 = Fraccion(1,2)
+    fraccion1 = Fraccion(1,0)
     fraccion2 = Fraccion(3,2)
     fraccion3 = Fraccion(4,5)
     fraccion4 = Fraccion(3,6)
     print(fraccion1)
     print(fraccion1.obtenerReal())
     fraccion1.multiplicarPorEntero(5)
-    fraccion2.sumarFracciones(2,2)
-    fraccion3.restarFracciones(3,2)
-    fraccion1.multiplicarFracciones(1, 2)
+    fraccion2.sumarFracciones(fraccion1,fraccion2)
+    fraccion3.restarFracciones(fraccion1,fraccion2)
+    fraccion1.multiplicarFracciones(fraccion1, fraccion2)
     print(fraccion4.simplificarFraccion())
