@@ -18,9 +18,9 @@ public class TestTiempo {
     Tiempo t1 = new Tiempo();
 
     System.out.println(t1);
-    t1.modificar(1, 1, 60);
+    t1.sumarTiempo(-1, 1, 60);
     System.out.println(t1);
-    t1.modificar(-1, -1, -60);
+    t1.restarTiempo(-1, -1, -60);
     System.out.println(t1);
   }
 

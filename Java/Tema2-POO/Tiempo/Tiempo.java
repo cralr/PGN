@@ -20,32 +20,52 @@ import java.util.Calendar;
  */
 public class Tiempo {
 //atributos
- Calendar calendar;
+ Calendar calendario;
 
  /**
   * Constructor
   */
  public Tiempo() {
-   calendar = Calendar.getInstance();
+   calendario = Calendar.getInstance();
  }
 
- /**
-  * Modifica el tiempo
+ 
+ /*
+  * Método para sumar horas, minutos y segundos.
   * 
-  * @param horas
-  * @param minutos
-  * @param segundos
+  * @param horas, minutos y segundos pasados por parámetros.
   */
- public void modificar(int horas, int minutos, int segundos) {
-   calendar.add(Calendar.SECOND, segundos);
-   calendar.add(Calendar.MINUTE, minutos);
-   calendar.add(Calendar.HOUR_OF_DAY, horas);
+
+ public void sumarTiempo(int horas, int minutos, int segundos) {
+   if (horas > 0 && minutos >0 && segundos>0) {
+     calendario.add(Calendar.SECOND, segundos);
+     calendario.add(Calendar.MINUTE, minutos);
+     calendario.add(Calendar.HOUR_OF_DAY, horas);
+   } else {
+     System.out.println("Éste apartado es para sumar horas, minutos y segundos.");
+   }
+ }
+
+ /*
+  * Método para sumar horas, minutos y segundos.
+  * 
+  * @param horas, minutos y segundos pasados por parámetros.
+  */
+
+ public void restarTiempo(int horas, int minutos, int segundos) {
+   if (horas < 0 && minutos < 0 && segundos < 0) {
+     calendario.add(Calendar.SECOND, segundos);
+     calendario.add(Calendar.MINUTE, minutos);
+     calendario.add(Calendar.HOUR_OF_DAY, horas);
+   } else {
+     System.out.println("Éste apartado es para restar horas, minutos y segundos.");
+   }
  }
 
  @Override
  public String toString() {
-   return calendar.get(Calendar.HOUR_OF_DAY) + "h " + calendar.get(Calendar.MINUTE) + "m "
-       + calendar.get(Calendar.SECOND) + "s";
+   return calendario.get(Calendar.HOUR_OF_DAY) + "h " + calendario.get(Calendar.MINUTE) + "m "
+       + calendario.get(Calendar.SECOND) + "s";
  }
 
 }
