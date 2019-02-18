@@ -25,7 +25,7 @@ public class Tiempo {
   * Constructor
   */
  public Tiempo() {
-   calendario = Calendar.getInstance();
+   calendario = Calendar.getInstance(); // getInstance() se usa para poder obtener una instancia que devuelve la hora actual.
  }
 
  
