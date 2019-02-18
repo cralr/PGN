@@ -1,8 +1,6 @@
 
 package Tiempo;
 
-import Listado1.Fraccion;
-
 /**
  *Test para probar la clase Tiempo
  *
