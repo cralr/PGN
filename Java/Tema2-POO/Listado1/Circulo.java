@@ -2,24 +2,24 @@
  * 
  */
 package Listado1;
-
+//miauuuuuuuuuuuuuuuuuu
 import javax.swing.JOptionPane;
 
 /**
  *
- * 2. Crea la clase ìCirculoî en Java que responda al siguiente comportamiento:
+ * 2. Crea la clase ‚ÄúCirculo‚Äù en Java que responda al siguiente comportamiento:
  * 
- * Un cÌrculo puede crecer: Aumenta su radio. Un cÌrculo puede menguar:
- * Decrementa su radio. Un cÌrculo me devuelve su ·rea si se la pido. Un cÌrculo
- * me dice su estado, por ejemplo ìSoy un cÌrculo de radio 0.5 metros. Ocupo un
- * ·rea de 0.7853981633974483 metros cuadradosî (mÈtodo toString())
+ * Un c√≠rculo puede crecer: Aumenta su radio. Un c√≠rculo puede menguar:
+ * Decrementa su radio. Un c√≠rculo me devuelve su √°rea si se la pido. Un c√≠rculo
+ * me dice su estado, por ejemplo ‚ÄúSoy un c√≠rculo de radio 0.5 metros. Ocupo un
+ * √°rea de 0.7853981633974483 metros cuadrados‚Äù (m√©todo toString())
  * 
- * 4. Modifica la clase CÌrculo para que cuando el radio se convierta a 0 el
- * cÌrculo reaccione y diga con una caja de texto gr·fica ìSoy un mÌsero punto
- * sin ·reaî usando la clase JOptionPane del paquete javax.swing. PodÈis ver
- * este vÌdeo: https://youtu.be/F_48qh3BcDs
+ * 4. Modifica la clase C√≠rculo para que cuando el radio se convierta a 0 el
+ * c√≠rculo reaccione y diga con una caja de texto gr√°fica ‚ÄúSoy un m√≠sero punto
+ * sin √°rea‚Äù usando la clase JOptionPane del paquete javax.swing. Pod√©is ver
+ * este v√≠deo: https://youtu.be/F_48qh3BcDs
  * 
- * @author Rafael Miguel Cruz ¡lvarez
+ * @author Rafael Miguel Cruz √Ålvarez
  * @version 1.0
  */
 
@@ -41,7 +41,7 @@ public class Circulo {
       this.radio=1;
     }
     else if(radio==0) {
-      System.out.println(JOptionPane.showInputDialog("Soy un mÌsero punto sin ·rea"));
+      System.out.println(JOptionPane.showInputDialog("Soy un m√≠sero punto sin √°rea"));
     }
   }
   
@@ -65,6 +65,6 @@ public class Circulo {
 
   @Override
   public String toString() {
-    return "Soy un Circulo de radio "+getRadio()+" metros. Ocupo un ·rea de "+getArea()+" metros cuadrados.";
+    return "Soy un Circulo de radio "+getRadio()+" metros. Ocupo un √°rea de "+getArea()+" metros cuadrados.";
   }
 }
