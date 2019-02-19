@@ -44,8 +44,8 @@ public class TestFracciones {
     
       switch(opc) {
         case 1:
-          System.out.println(fraccion1.toString()+"\n");
-          System.out.println(fraccion2.toString()+"\n");
+          System.out.println(fraccion1+"\n");
+          System.out.println(fraccion2+"\n");
           break;
           
         case 2:
@@ -61,17 +61,17 @@ public class TestFracciones {
           break;
           
         case 4:
-          System.out.println(Fraccion.multiplicarFracciones(fraccion1, fraccion2));
+          System.out.println(fraccion1.multiplicarFracciones(fraccion1, fraccion2));
           break;
           
         case 5: 
           System.out.println("Sumar 2 fracciones: ");
-          System.out.println(Fraccion.sumar(fraccion1, fraccion2));
+          System.out.println(fraccion1.sumar(fraccion1, fraccion2));
           break;
           
         case 6: 
           System.out.println("Restar 2 fracciones: ");
-          System.out.println(Fraccion.restar(fraccion1, fraccion2));
+          System.out.println(fraccion1.restar(fraccion1, fraccion2));
           break;
          
         case 7:

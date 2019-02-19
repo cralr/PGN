@@ -18,7 +18,7 @@ public class TestCirculo {
    
     //Creamos el objeto
     
-    Circulo circulo = new Circulo(0);
+    Circulo circulo = new Circulo(5);
     
     System.out.println(circulo.toString());
     circulo.incrementar(27);

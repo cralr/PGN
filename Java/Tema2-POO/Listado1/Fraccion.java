@@ -44,7 +44,7 @@ public class Fraccion {
    * Método setter para numerador
    * @param numerador
    */
-  private void setNumerador(double numerador) {
+  public void setNumerador(double numerador) {
     this.numerador = numerador;
   }
   
@@ -60,7 +60,7 @@ public class Fraccion {
    * Método setter del denominador en el que controlamos que el denominador no sea 0.
    * @param denominador
    */
-  private void setDenominador(double denominador) {
+  public void setDenominador(double denominador) {
     this.denominador = denominador;
     if (denominador == 0) {
       System.out.println("El denominador no puede ser 0, se le asigna 1.");
@@ -94,7 +94,7 @@ public class Fraccion {
    * @param fraccion1 
    * @param fraccion2
    */
-  public static Fraccion  multiplicarFracciones(Fraccion fraccion1, Fraccion fraccion2) {
+  public Fraccion  multiplicarFracciones(Fraccion fraccion1, Fraccion fraccion2) {
     double n; 
     double d;
     n=fraccion1.getNumerador()* fraccion2.getNumerador();
@@ -110,11 +110,11 @@ public class Fraccion {
    * @param fraccion2
    * @return resultado de la resta de las fracciones
    */
-  public static String sumar(Fraccion fraccion1, Fraccion fraccion2) {
+  public String sumar(Fraccion fraccion1, Fraccion fraccion2) {
     double auxNum = fraccion1.getNumerador() * fraccion2.getDenominador();
     double auxDen = fraccion2.getNumerador() * fraccion1.getDenominador();
     double auxDivisor = fraccion1.getDenominador() * fraccion2.getDenominador();
-    return ("La suma de las fracciones es: "+(int)(auxNum + auxDen) + " / " + (int)auxDivisor);
+    return ("La suma de las fracciones es: "+(int)(auxNum + auxDen) + "/" + (int)auxDivisor);
   }
   
   /**
@@ -123,11 +123,11 @@ public class Fraccion {
    * @param fraccion2
    * @return resultado de la resta de las fracciones
    */
-  public static String restar(Fraccion fraccion1, Fraccion fraccion2) {
+  public String restar(Fraccion fraccion1, Fraccion fraccion2) {
     double auxNum = fraccion1.getNumerador() * fraccion2.getDenominador();
     double auxDen = fraccion2.getNumerador() * fraccion1.getDenominador();
     double auxDivisor = fraccion1.getDenominador() * fraccion2.getDenominador();
-    return ("La resta de las fracciones es: "+(int)(auxNum - auxDen) + " / " + (int)auxDivisor);
+    return ("La resta de las fracciones es: "+(int)(auxNum - auxDen) + "/" + (int)auxDivisor);
   }
   
   /**
