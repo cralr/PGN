@@ -2,16 +2,16 @@ package Terminal;
 
 /**
  * Implementa la clase Movil como subclase de Terminal (la clase del ejercicio
- * anterior que ya no hace falta modificar). Cada mÛvil lleva asociada una
- * tarifa que puede ser ìrataî, ìmonoî o ìbisonteî. El coste por minuto es de 6,
- * 12 y 30 cÈntimos respectivamente. Se tarifican los segundos exactos.
- * Obviamente, cuando un mÛvil llama a otro, se le cobra al que llama, no al que
- * recibe la llamada. A continuaciÛn se proporciona el contenido del main y el
+ * anterior que ya no hace falta modificar). Cada m√≥vil lleva asociada una
+ * tarifa que puede ser "rata", "mono" o "bisonte". El coste por minuto es de 6,
+ * 12 y 30 c√©ntimos respectivamente. Se tarifican los segundos exactos.
+ * Obviamente, cuando un m√≥vil llama a otro, se le cobra al que llama, no al que
+ * recibe la llamada. A continuaci√≥n se proporciona el contenido del main y el
  * resultado que debe aparecer por pantalla. Para que el total tarificado
  * aparezca con dos decimales, puedes utilizar DecimalFormat. Contenido del main
  *
  *
- * @author Rafael Miguel Cruz ¡lvarez
+ * @author Rafael Miguel Cruz √Ålvarez
  * @version 1.0
  */
 

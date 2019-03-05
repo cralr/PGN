@@ -4,12 +4,12 @@
 package Terminal;
 
 /**
- * Implementa la clase Terminal. Un terminal tiene asociado un n˙mero. Los
- * terminales se pueden llamar unos a otros y el tiempo de conversaciÛn corre
- * para ambos. A continuaciÛn se proporciona el contenido del main y el
+ * Implementa la clase Terminal. Un terminal tiene asociado un n√∫mero. Los
+ * terminales se pueden llamar unos a otros y el tiempo de conversaci√≥n corre
+ * para ambos. A continuaci√≥n se proporciona el contenido del main y el
  * resultado que debe aparecer por pantalla.
  *
- * @author Rafael Miguel Cruz ¡lvarez
+ * @author Rafael Miguel Cruz √Ålvarez
  * @version 1.0
  */
 public class Terminal {
@@ -24,7 +24,7 @@ public class Terminal {
   }
 
   /**
-   * MÈtodo getter del n˙mero de telÈfono
+   * M√©todo getter del n√∫mero de tel√©fono
    * @return the numTelefono
    */
   public String getNumTelefono() {
@@ -32,7 +32,7 @@ public class Terminal {
   }
 
   /**
-   * MÈtodo Setter del n˙mero de telÈfono
+   * M√©todo Setter del n√∫mero de tel√©fono
    * @param numTelefono the numTelefono to set
    */
   private void setNumTelefono(String numTelefono) {
@@ -41,7 +41,7 @@ public class Terminal {
   
 
   /**
-   * MÈtodo getter del tiempo de llamada
+   * M√©todo getter del tiempo de llamada
    * @return the tiempoLLamada
    */
   public int getTiempoLLamada() {
@@ -49,7 +49,7 @@ public class Terminal {
   }
 
   /**
-   * * MÈtodo setter del tiempo de llamada
+   * * M√©todo setter del tiempo de llamada
    * @param tiempoLLamada the tiempoLLamada to set
    */
   private void setTiempoLLamada(int tiempoLLamada) {
@@ -57,7 +57,7 @@ public class Terminal {
   }
   
   /**
-   * MÈtodo llamada entre terminales
+   * M√©todo llamada entre terminales
    * @param t objeto terminal
    * @param tiempo tiempo empleado en la llamada
    */
@@ -72,7 +72,7 @@ public class Terminal {
    */
   @Override
   public String toString() {
-    return "n∫ "+getNumTelefono()+" - "+getTiempoLLamada()+"s.";
+    return "nÔøΩ "+getNumTelefono()+" - "+getTiempoLLamada()+"s.";
   }
   
   

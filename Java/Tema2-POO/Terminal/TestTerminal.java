@@ -6,7 +6,7 @@ package Terminal;
 /**
  *
  *
- * @author Rafael Miguel Cruz ¡lvarez
+ * @author Rafael Miguel Cruz √Ålvarez
  * @version 1.0
  */
 public class TestTerminal {
