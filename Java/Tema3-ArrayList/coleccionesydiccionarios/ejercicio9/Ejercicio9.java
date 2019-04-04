@@ -31,7 +31,7 @@ public class Ejercicio9 {
     ArrayList<Carta> pilaDescarte = new ArrayList<Carta>();
 
     /**
-     * Ciclo que añade objetos de carta al arraylist barja
+     * Añadir objetos de carta a la baraja.
      */
     for (Figura figura : Figura.values()) {
       for (Palo palo : Palo.values()) {
@@ -40,7 +40,7 @@ public class Ejercicio9 {
     }
 
     /**
-     * Desordeno la carta con el método shuffle de la clase Collections
+     * Desordeno las cartas
      */
     Collections.shuffle(baraja);
 
@@ -52,7 +52,7 @@ public class Ejercicio9 {
     }
 
     /**
-     * Muestro las cartas desordenadas
+     * Mostrar las cartas desordenadas
      */
     System.out.println("Cartas aleatorias sin ordenar\n");
     for (Carta carta : pilaDescarte) {
@@ -65,7 +65,7 @@ public class Ejercicio9 {
     Collections.sort(pilaDescarte);
 
     /**
-     * Muestro las cartas ordenadas
+     * Mostrar cartas ordenadas
      */
     System.out.println("\nCartas ordenadas\n");
     for (Carta carta : pilaDescarte) {
