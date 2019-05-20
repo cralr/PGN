@@ -22,6 +22,25 @@ import java.io.IOException;
 import java.util.Vector;
 import java.awt.event.ActionEvent;
 
+/**
+ * 
+ * 5. Escribe un programa que guarde en un fichero el contenido de otros dos
+ * ficheros, de tal forma que en el fichero resultante aparezcan las líneas de
+ * los primeros dos ficheros mezcladas, es decir, la primera línea será del
+ * primer fichero, la segunda será del segundo fichero, la tercera será la
+ * siguiente del primer fichero, etc.
+ * 
+ * Componentes gráficos:
+ * 
+ * Etiquetas. 
+ * Fichero origen y destino. 
+ * Botón para ejecutar la acción. 
+ * Caja de texto con el contenido del fichero destino no editable.
+ * 
+ * @author Rafael Miguel Cruz Álvarez
+ * @version 1.0
+ */
+
 public class Ejercicio5 extends JFrame {
 
   private JPanel contentPane;
@@ -53,20 +72,18 @@ public class Ejercicio5 extends JFrame {
     contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
     setContentPane(contentPane);
     contentPane.setLayout(null);
-    
+
     JLabel lblFichero1 = new JLabel("Fichero 1:");
     lblFichero1.setBounds(53, 53, 76, 14);
     contentPane.add(lblFichero1);
-    
+
     JLabel labelFichero2 = new JLabel("Fichero 2:");
     labelFichero2.setBounds(53, 104, 76, 14);
     contentPane.add(labelFichero2);
-    
-    
-    
+
     JFileChooser jfcFichero1 = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
     jfcFichero1.setDialogTitle("Seleccione un fichero...");
-    
+
     JButton button_fichero1 = new JButton("Seleccione un fichero");
     button_fichero1.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent arg0) {
@@ -78,10 +95,10 @@ public class Ejercicio5 extends JFrame {
     });
     button_fichero1.setBounds(139, 49, 151, 23);
     contentPane.add(button_fichero1);
-    
+
     JFileChooser jfcFichero2 = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
     jfcFichero2.setDialogTitle("Seleccione un fichero...");
-    
+
     JButton button_fichero2 = new JButton("Seleccione un fichero");
     button_fichero2.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
@@ -93,7 +110,7 @@ public class Ejercicio5 extends JFrame {
     });
     button_fichero2.setBounds(139, 100, 151, 23);
     contentPane.add(button_fichero2);
-    
+
     JButton btnNewButton = new JButton("Guardar nuevo Fichero");
     btnNewButton.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
