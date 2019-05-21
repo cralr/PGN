@@ -252,7 +252,7 @@ public class Ejercicio4 {
           int moneda02=0;
           int moneda01=0;
           
-          while(dinero>0) {
+          
             while(dinero-500>=0) {
               dinero-=500;
               billete500++;
@@ -317,7 +317,7 @@ public class Ejercicio4 {
               moneda01++;
               dinero-=0.01;
               }
-          }
+          
           textField_billete500.setText(Integer.toString(billete500));
           textField_billete200.setText(Integer.toString(billete200));
           textField_billete100.setText(Integer.toString(billete100));
